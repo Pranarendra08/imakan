@@ -13,10 +13,10 @@
             android:name=".signin.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".OnboardingActivity2"
+            android:name=".onboarding.OnboardingActivity2"
             android:exported="false" />
         <activity
-            android:name=".OnboardingActivity1"
+            android:name=".onboarding.OnboardingActivity1"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
