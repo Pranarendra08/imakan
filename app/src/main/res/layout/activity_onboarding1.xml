@@ -8,7 +8,7 @@
     tools:context=".OnboardingActivity1">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_lanjut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -44,7 +44,7 @@
         android:gravity="center"
         android:text="@string/tujuan_desc"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_lanjut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
