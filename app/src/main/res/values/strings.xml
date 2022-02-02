@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">imakan</string>
+    <string name="imakan">IMAKAN</string>
+    <string name="motto_imakan">Indonesia\nMaju\nMelalui\nPerikanan</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="misi">MISI dari IMAKAN</string>
+    <string name="misi_desc">IMAKAN memiliki misi untuk\nmendigitalisasi seluruh transaksi\nperikanan di penjuru negeri dengan\nmudah</string>
+    <string name="tujuan_desc">IMAKAN akan membantu para penjual\nikan dan nelayan untuk mendigitalkan\ntoko dan produk mereka sehingga para\nmasyarakat dapat mengenal serta\nmelakukan transaksi</string>
+    <string name="tujuan">Tujuan dari IMAKAN</string>
+</resources>
