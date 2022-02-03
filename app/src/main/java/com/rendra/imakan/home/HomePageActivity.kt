@@ -1,14 +1,12 @@
-package com.rendra.imakan.signin
+package com.rendra.imakan.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rendra.imakan.R
 
-class SignInActivity : AppCompatActivity() {
+class HomePageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
-
-
+        setContentView(R.layout.activity_home_page)
     }
 }

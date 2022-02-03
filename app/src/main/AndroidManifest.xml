@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
+            android:name=".home.HomePageActivity"
+            android:exported="false" />
+        <activity
             android:name=".signin.SignInActivity"
             android:exported="false" />
         <activity
