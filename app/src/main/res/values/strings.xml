@@ -17,5 +17,9 @@
     <string name="jkt_2021_imakan">JKT © 2021 IMAKAN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="best_seller">Best Seller Minggu Ini</string>
+    <string name="show_more">Show More</string>
+    <string name="rekomendasi">Rekomendasi Buat Kamu</string>
+    <string name="beli_lagi">Beli Lagi Pesananmu</string>
 
 </resources>
