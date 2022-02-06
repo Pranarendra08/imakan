@@ -21,5 +21,10 @@
     <string name="show_more">Show More</string>
     <string name="rekomendasi">Rekomendasi Buat Kamu</string>
     <string name="beli_lagi">Beli Lagi Pesananmu</string>
+    <string name="nama">Nama</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
 
 </resources>
