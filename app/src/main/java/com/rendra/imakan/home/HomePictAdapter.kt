@@ -3,6 +3,7 @@ package com.rendra.imakan.home
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -14,28 +15,32 @@ import com.google.firebase.database.ValueEventListener
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanHome
 
-class HomePictAdapter(private var datab: List<ikanHome>,
+class HomePictAdapter(private var data: List<ikanHome>,
                       private val listener:(ikanHome) -> Unit)
     : RecyclerView.Adapter<HomePictAdapter.ViewHolder>() {
+
+    lateinit var contextAdapter: Context
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): HomePictAdapter.ViewHolder {
-        TODO("Not yet implemented")
+        val layoutInflater = LayoutInflater.from(parent.context)
+        contextAdapter = parent.context
+        val inflatedView = layoutInflater.inflate(R.layout.row_item_home_pict, parent, false)
+        return ViewHolder(inflatedView)
     }
 
     override fun onBindViewHolder(holder: HomePictAdapter.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bindItem(data[position], listener, contextAdapter)
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount(): Int = data.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvNama:TextView = view.findViewById(R.id.tv_nama_ikan)
         private val tvJarak:TextView = view.findViewById(R.id.tv_jarak)
+
         private val ivImage:ImageView = view.findViewById(R.id.iv_foto_ikan)
 
         fun bindItem(data:ikanHome, listener: (ikanHome) -> Unit, context: Context) {
@@ -49,7 +54,6 @@ class HomePictAdapter(private var datab: List<ikanHome>,
             itemView.setOnClickListener {
                 listener(data)
             }
-
         }
     }
 
