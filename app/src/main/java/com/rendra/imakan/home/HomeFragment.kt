@@ -52,7 +52,8 @@ class HomeFragment : Fragment() {
                 }
 
                 rv_home_pict.adapter = HomePictAdapter(dataList) {
-                    startActivity(Intent(context, DetailActivity::class.java)./*putExtra("data", it)*/)
+                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
                 }
             }
 
