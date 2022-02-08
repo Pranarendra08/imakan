@@ -149,7 +149,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_best_seller" />
 
         <TextView
             android:id="@+id/textView21"
@@ -184,14 +184,13 @@
             android:layout_marginEnd="16dp"
             android:longClickable="false"
             android:nestedScrollingEnabled="false"
-            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/iv_best_seller"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
@@ -205,8 +204,8 @@
             android:layout_width="40dp"
             android:layout_height="20dp"
             android:src="@drawable/shape_rectangle_rate_hijau"
-            app:layout_constraintEnd_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/imageView13" />
+            app:layout_constraintEnd_toEndOf="@+id/iv_best_seller"
+            app:layout_constraintTop_toTopOf="@+id/iv_best_seller" />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -230,19 +229,19 @@
             tools:text="4.8" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/tv_ikan_best_seller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/nunito_semibold"
             android:textColor="@color/biru"
             android:textSize="15sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            app:layout_constraintStart_toEndOf="@+id/iv_best_seller"
+            app:layout_constraintTop_toTopOf="@+id/iv_best_seller"
             tools:text="Ikan Nila" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/tv_harga_best_seller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -250,30 +249,30 @@
             android:fontFamily="@font/nunito_semibold"
             android:textColor="@color/biru"
             android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintStart_toEndOf="@+id/iv_best_seller"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ikan_best_seller"
             tools:text="Rp. 40,000 / Kg" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/tv_tersedia_best_seller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_semibold"
             android:textColor="@color/biru"
             android:textSize="9sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView25"
-            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_harga_best_seller"
+            app:layout_constraintStart_toEndOf="@+id/tv_harga_best_seller"
             tools:text="(tersedia 23 kg)" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/tv_jarak_best_seller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:textSize="10sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/iv_best_seller"
+            app:layout_constraintTop_toBottomOf="@+id/tv_harga_best_seller"
             tools:text="11 Km dari tempat kamu" />
 
         <ImageView
@@ -282,12 +281,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:src="@drawable/ic_lambang_toko"
-            app:layout_constraintBottom_toBottomOf="@+id/textView28"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toTopOf="@+id/textView28" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_toko_best_seller"
+            app:layout_constraintStart_toEndOf="@+id/iv_best_seller"
+            app:layout_constraintTop_toTopOf="@+id/tv_toko_best_seller" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/tv_toko_best_seller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
@@ -295,7 +294,7 @@
             android:fontFamily="@font/nunito_sans"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/imageView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jarak_best_seller"
             tools:text="Toko Ikan Segar Mas Yoru" />
 
 

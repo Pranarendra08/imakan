@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.rendra.imakan.R
@@ -49,6 +50,7 @@ class HomePictAdapter(private var data: List<ikanHome>,
 
             Glide.with(context)
                 .load(data.url)
+                .apply(RequestOptions.fitCenterTransform())
                 .into(ivImage)
 
             itemView.setOnClickListener {

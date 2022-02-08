@@ -21,8 +21,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans"
         android:text="Nama Ikan"
-        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_jarak"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -32,7 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
+        android:fontFamily="@font/nunito_sans"
         android:text="Jarak"
+        android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
