@@ -13,4 +13,6 @@
     <color name="hijau_muda">#801ABC9C</color>
     <color name="biru_muda">#E9EDF9</color>
     <color name="hijau_9e">#9E9E9E</color>
+    <color name="transparant_black">#80000000</color>
+    <color name="harga_detail">#71DFE7</color>
 </resources>
