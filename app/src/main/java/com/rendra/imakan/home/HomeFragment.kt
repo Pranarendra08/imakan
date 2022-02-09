@@ -54,6 +54,7 @@ class HomeFragment : Fragment() {
         tv_jarak_best_seller.text = preferences.getValue("jarak")
         tv_tersedia_best_seller.text = preferences.getValue("tersedia")
         tv_toko_best_seller.text = preferences.getValue("toko")
+
         getData1()
         getData2()
 
@@ -89,8 +90,8 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList2.add(ikan!!)
                 }
-            }
 
+            }
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
             }
