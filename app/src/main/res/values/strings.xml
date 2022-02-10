@@ -29,5 +29,9 @@
     <string name="tentang_produk">Tentang produk ini</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero quis tempus elementum nunc, urna fringilla. Dui volutpat ultricies risus diam nisl nisl, pellentesque habitasse. Commodo, phasellus nec erat eu, facilisi. Ac id amet dictum sed scelerisque curabitur.</string>
     <string name="pengiriman">Pengiriman</string>
+    <string name="dikirim_dari">dikirim dari</string>
+    <string name="tentang_toko">Tentang toko</string>
+    <string name="ulasan_dari_pembeli">Ulasan dari pembeli</string>
+    <string name="masukkan_ke_keranjang">Masukkan ke keranjang</string>
 
 </resources>
