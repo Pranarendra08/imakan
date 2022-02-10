@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
-            android:name=".DetailActivity"
+            android:name=".detail.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".home.HomePictAdapter"

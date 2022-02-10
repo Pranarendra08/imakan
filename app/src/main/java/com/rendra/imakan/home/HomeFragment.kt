@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import com.rendra.imakan.DetailActivity
+import com.rendra.imakan.detail.DetailActivity
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.model.ikanHome
