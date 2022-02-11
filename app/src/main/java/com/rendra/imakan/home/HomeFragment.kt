@@ -22,10 +22,8 @@ class HomeFragment : Fragment() {
 
     private lateinit var preferences: Preferences
     private lateinit var mDatabase: DatabaseReference
-    private lateinit var mDatabase2: DatabaseReference
 
     private var dataList = ArrayList<ikanHome>()
-    private var dataList2 = ArrayList<ikanDetail>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,23 +38,10 @@ class HomeFragment : Fragment() {
 
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
-        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
-        Glide.with(this)
-            .load(preferences.getValue("url"))
-            .apply(RequestOptions.centerCropTransform())
-            .into(iv_best_seller)
-
-        tv_ikan_best_seller.text = preferences.getValue("nama")
-        tv_harga_best_seller.text = preferences.getValue("harga")
-        tv_jarak_best_seller.text = preferences.getValue("jarak")
-        tv_tersedia_best_seller.text = preferences.getValue("tersedia")
-        tv_toko_best_seller.text = preferences.getValue("toko")
-
         getData1()
-        getData2()
 
     }
 
@@ -75,23 +60,6 @@ class HomeFragment : Fragment() {
                 }
             }
 
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
-            }
-
-        })
-    }
-
-    private fun getData2() {
-        mDatabase2.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                dataList2.clear()
-                for (getdataSnapshot in snapshot.children) {
-                    var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
-                    dataList2.add(ikan!!)
-                }
-
-            }
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
             }
