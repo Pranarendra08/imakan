@@ -2,6 +2,7 @@ package com.rendra.imakan.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.rendra.imakan.R
 import com.rendra.imakan.home.explore.ExploreFragment
@@ -19,10 +20,20 @@ class HomePageActivity : AppCompatActivity() {
 
         iv_home.setOnClickListener {
             setFragment(fragmentHome)
+
+            changeIcon(iv_home, R.drawable.home_active)
+            changeIcon(iv_explore, R.drawable.explore)
+            changeIcon(iv_chat, R.drawable.chat)
+            changeIcon(iv_profile, R.drawable.profile)
         }
 
         iv_explore.setOnClickListener {
             setFragment(fragmentExplore)
+
+            changeIcon(iv_home, R.drawable.home)
+            changeIcon(iv_explore, R.drawable.explore_active)
+            changeIcon(iv_chat, R.drawable.chat)
+            changeIcon(iv_profile, R.drawable.profile)
         }
 
     }
@@ -34,4 +45,7 @@ class HomePageActivity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 
+    private fun changeIcon(imageView: ImageView, int: Int) {
+        imageView.setImageResource(int)
+    }
 }
