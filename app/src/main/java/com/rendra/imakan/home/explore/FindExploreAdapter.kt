@@ -15,10 +15,11 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
 import com.rendra.imakan.R
 import com.rendra.imakan.model.FindExplore
+import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.model.ikanHome
 
-class FindExploreAdapter(private var data: List<FindExplore>,
-                         private val listener:(FindExplore) -> Unit)
+class FindExploreAdapter(private var data: List<ikanDetail>,
+                         private val listener:(ikanDetail) -> Unit)
     : RecyclerView.Adapter<FindExploreAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
@@ -42,7 +43,7 @@ class FindExploreAdapter(private var data: List<FindExplore>,
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val btnFind:TextView = view.findViewById(R.id.btn_find)
 
-        fun bindItem(data:FindExplore, listener: (FindExplore) -> Unit, context: Context) {
+        fun bindItem(data:ikanDetail, listener: (ikanDetail) -> Unit, context: Context) {
             btnFind.setText(data.nama)
 
             itemView.setOnClickListener {

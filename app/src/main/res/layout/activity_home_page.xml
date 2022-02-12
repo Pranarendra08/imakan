@@ -32,6 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             app:srcCompat="@drawable/home_active" />
 
         <ImageView
@@ -39,6 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             app:srcCompat="@drawable/explore" />
 
         <ImageView
@@ -46,12 +50,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             app:srcCompat="@drawable/cart" />
 
         <ImageView
             android:id="@+id/iv_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/chat" />
 
@@ -60,6 +68,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
             app:srcCompat="@drawable/profile" />
     </LinearLayout>
 

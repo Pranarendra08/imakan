@@ -1,4 +1,4 @@
-package com.rendra.imakan.home
+package com.rendra.imakan.home.explore
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -12,23 +12,23 @@ import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanHome
 
-class HomePictAdapter(private var data: List<ikanHome>,
-                      private val listener:(ikanHome) -> Unit)
-    : RecyclerView.Adapter<HomePictAdapter.ViewHolder>() {
+class ExplorePageAdapter(private var data: List<ikanHome>,
+                         private val listener:(ikanHome) -> Unit)
+    : RecyclerView.Adapter<ExplorePageAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): HomePictAdapter.ViewHolder {
+    ): ExplorePageAdapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         contextAdapter = parent.context
         val inflatedView = layoutInflater.inflate(R.layout.row_item_home_pict, parent, false)
         return ViewHolder(inflatedView)
     }
 
-    override fun onBindViewHolder(holder: HomePictAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ExplorePageAdapter.ViewHolder, position: Int) {
         holder.bindItem(data[position], listener, contextAdapter)
     }
 
