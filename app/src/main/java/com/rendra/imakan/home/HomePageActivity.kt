@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.rendra.imakan.R
+import com.rendra.imakan.cart.CartFragment
 import com.rendra.imakan.explore.ExploreFragment
 import kotlinx.android.synthetic.main.activity_home_page.*
 
@@ -15,6 +16,7 @@ class HomePageActivity : AppCompatActivity() {
 
         val fragmentHome = HomeFragment()
         val fragmentExplore = ExploreFragment()
+        val fragmentCart = CartFragment()
 
         setFragment(fragmentHome)
 
@@ -32,6 +34,15 @@ class HomePageActivity : AppCompatActivity() {
 
             changeIcon(iv_home, R.drawable.home)
             changeIcon(iv_explore, R.drawable.explore_active)
+            changeIcon(iv_chat, R.drawable.chat)
+            changeIcon(iv_profile, R.drawable.profile)
+        }
+
+        iv_cart.setOnClickListener {
+            setFragment(fragmentCart)
+
+            changeIcon(iv_home, R.drawable.home)
+            changeIcon(iv_explore, R.drawable.explore)
             changeIcon(iv_chat, R.drawable.chat)
             changeIcon(iv_profile, R.drawable.profile)
         }

@@ -35,5 +35,6 @@
     <string name="masukkan_ke_keranjang">Masukkan ke keranjang</string>
     <string name="keranjang">Keranjang</string>
     <string name="beli">Beli</string>
+    <string name="ringkasan_belanja">Ringkasan belanja</string>
 
 </resources>

@@ -16,9 +16,9 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_rectangle_rate_hijau.xml" value="0.2521172638436482" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout-small/activity_sign_in.xml" value="0.38697916666666665" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout-small/row_item_explore_image.xml" value="0.3175213675213675" />
-        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_cart.xml" value="0.3175213675213675" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_detail.xml" value="0.25" />
-        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_home_page.xml" value="0.4254007398273736" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_home_page.xml" value="0.33" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_onboarding1.xml" value="0.22" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_onboarding2.xml" value="0.38697916666666665" />
@@ -26,6 +26,7 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/activity_splash_screen.xml" value="0.38697916666666665" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/fragment_blank.xml" value="0.38697916666666665" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/fragment_chat.xml" value="0.3175213675213675" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/fragment_detail_page.xml" value="0.3175213675213675" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/fragment_explore.xml" value="0.33" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/fragment_home.xml" value="0.22" />

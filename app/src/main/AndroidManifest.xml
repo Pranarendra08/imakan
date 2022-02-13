@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
-            android:name="com.rendra.imakan.cart.CartActivity"
+            android:name="com.rendra.imakan.cart.CartFragment"
             android:exported="false" />
         <activity
             android:name=".detail.DetailActivity"
