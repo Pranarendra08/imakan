@@ -16,7 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
-            android:name="com.rendra.imakan.cart.CartFragment"
+            android:name=".profile.AccountSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cart.CartFragment"
             android:exported="false" />
         <activity
             android:name=".detail.DetailActivity"

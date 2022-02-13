@@ -8,6 +8,7 @@ import com.rendra.imakan.R
 import com.rendra.imakan.cart.CartFragment
 import com.rendra.imakan.chat.ChatFragment
 import com.rendra.imakan.explore.ExploreFragment
+import com.rendra.imakan.profile.ProfileFragment
 import kotlinx.android.synthetic.main.activity_home_page.*
 
 class HomePageActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class HomePageActivity : AppCompatActivity() {
         val fragmentExplore = ExploreFragment()
         val fragmentCart = CartFragment()
         val fragmentChat = ChatFragment()
+        val fragmentProfile = ProfileFragment()
 
         setFragment(fragmentHome)
 
@@ -56,6 +58,15 @@ class HomePageActivity : AppCompatActivity() {
             changeIcon(iv_explore, R.drawable.explore)
             changeIcon(iv_chat, R.drawable.chat_active)
             changeIcon(iv_profile, R.drawable.profile)
+        }
+
+        iv_profile.setOnClickListener {
+            setFragment(fragmentProfile)
+
+            changeIcon(iv_home, R.drawable.home)
+            changeIcon(iv_explore, R.drawable.explore)
+            changeIcon(iv_chat, R.drawable.chat)
+            changeIcon(iv_profile, R.drawable.profile_active)
         }
 
     }
