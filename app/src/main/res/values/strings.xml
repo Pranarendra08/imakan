@@ -37,5 +37,11 @@
     <string name="beli">Beli</string>
     <string name="ringkasan_belanja">Ringkasan belanja</string>
     <string name="obrolan">Obrolan</string>
+    <string name="profile">Profile</string>
+    <string name="melacak_orderanmu">Melacak Orderanmu</string>
+    <string name="menunggu_pembayaran">Menunggu Pembayaran</string>
+    <string name="produk_yang_ada_diwishlist">Produk yang ada di wishlist</string>
+    <string name="riwayat_pembelian">Riwayat Pembelian</string>
+    <string name="account_settings">Account settings</string>
 
 </resources>
