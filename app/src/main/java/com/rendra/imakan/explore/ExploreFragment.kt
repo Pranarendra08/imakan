@@ -1,4 +1,4 @@
-package com.rendra.imakan.home.explore
+package com.rendra.imakan.explore
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

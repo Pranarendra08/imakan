@@ -33,5 +33,7 @@
     <string name="tentang_toko">Tentang toko</string>
     <string name="ulasan_dari_pembeli">Ulasan dari pembeli</string>
     <string name="masukkan_ke_keranjang">Masukkan ke keranjang</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="beli">Beli</string>
 
 </resources>

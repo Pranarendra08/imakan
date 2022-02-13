@@ -1,22 +1,13 @@
-package com.rendra.imakan.home.explore
+package com.rendra.imakan.explore
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
 import com.rendra.imakan.R
-import com.rendra.imakan.model.FindExplore
 import com.rendra.imakan.model.ikanDetail
-import com.rendra.imakan.model.ikanHome
 
 class FindExploreAdapter(private var data: List<ikanDetail>,
                          private val listener:(ikanDetail) -> Unit)

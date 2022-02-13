@@ -10,7 +10,7 @@
         android:id="@+id/frameLayout5"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:context=".home.explore.ExploreFragment">
+        tools:context=".explore.ExploreFragment">
 
         <TextView
             android:id="@+id/textView14"

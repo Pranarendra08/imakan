@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.rendra.imakan.R
-import com.rendra.imakan.home.explore.ExploreFragment
+import com.rendra.imakan.explore.ExploreFragment
 import kotlinx.android.synthetic.main.activity_home_page.*
 
 class HomePageActivity : AppCompatActivity() {

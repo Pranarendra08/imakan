@@ -1,4 +1,4 @@
-package com.rendra.imakan.home.explore
+package com.rendra.imakan.explore
 
 import android.content.Context
 import android.view.LayoutInflater
