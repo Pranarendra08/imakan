@@ -9,7 +9,9 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/logo_imakan.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/rectangle_hijau.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_eclipse_white.xml" value="0.1" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_line_hijau.xml" value="0.3265822784810127" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_line_hijau_muda.xml" value="0.3574074074074074" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_line_merah.xml" value="0.3265822784810127" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_rectangle_biru_muda.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_rectangle_hijau.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_rectangle_hijau_muda.xml" value="0.3574074074074074" />
@@ -38,6 +40,7 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_explore_page.xml" value="0.33" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_find_explore.xml" value="0.75" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_home_pict.xml" value="0.28274428274428276" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_profile_wishlist.xml" value="0.67" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_ulasan_pembeli.xml" value="0.33" />
       </map>
     </option>
@@ -47,5 +50,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3175213675213675" />
+      </ProjectState>
+    </option>
   </component>
 </project>

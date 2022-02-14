@@ -43,5 +43,11 @@
     <string name="produk_yang_ada_diwishlist">Produk yang ada di wishlist</string>
     <string name="riwayat_pembelian">Riwayat Pembelian</string>
     <string name="account_settings">Account settings</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="edit_picture">Edit picture</string>
+    <string name="remove_picture">Remove Picture</string>
+    <string name="alamat_rumah">Address</string>
+    <string name="ganti_password">Change password? click here</string>
+    <string name="hint_alamat">Enter your address here</string>
 
 </resources>
