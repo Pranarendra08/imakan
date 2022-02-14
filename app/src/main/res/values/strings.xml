@@ -49,5 +49,6 @@
     <string name="alamat_rumah">Address</string>
     <string name="ganti_password">Change password? click here</string>
     <string name="hint_alamat">Enter your address here</string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
 
 </resources>
