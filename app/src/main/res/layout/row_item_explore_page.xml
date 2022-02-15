@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomePictAdapter">
+
+    <ImageView
+        android:id="@+id/iv_foto_ikan"
+        android:layout_width="150dp"
+        android:layout_height="290dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_nama_ikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Nama Ikan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_harga"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Harga"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_foto_ikan"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_foto_ikan2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_ikan"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_harga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Harga"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_foto_ikan2"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan2" />
+
+    <TextView
+        android:id="@+id/tv_nama_ikan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Nama Ikan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_harga2"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan2" />
+
+    <ImageView
+        android:id="@+id/iv_foto_ikan4"
+        android:layout_width="150dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_ikan3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_foto_ikan2"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_nama_ikan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Nama Ikan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_harga4"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan4" />
+
+    <TextView
+        android:id="@+id/tv_harga4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Harga"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_foto_ikan4"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan4" />
+
+    <ImageView
+        android:id="@+id/iv_foto_ikan3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_foto_ikan"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_harga5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Harga"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_foto_ikan3"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan3" />
+
+    <TextView
+        android:id="@+id/tv_nama_ikan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Nama Ikan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_harga4"
+        app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

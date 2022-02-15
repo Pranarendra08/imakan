@@ -29,5 +29,35 @@
     <string name="tentang_produk">Tentang produk ini</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero quis tempus elementum nunc, urna fringilla. Dui volutpat ultricies risus diam nisl nisl, pellentesque habitasse. Commodo, phasellus nec erat eu, facilisi. Ac id amet dictum sed scelerisque curabitur.</string>
     <string name="pengiriman">Pengiriman</string>
+    <string name="dikirim_dari">dikirim dari</string>
+    <string name="tentang_toko">Tentang toko</string>
+    <string name="ulasan_dari_pembeli">Ulasan dari pembeli</string>
+    <string name="masukkan_ke_keranjang">Masukkan ke keranjang</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="beli">Beli</string>
+    <string name="ringkasan_belanja">Ringkasan belanja</string>
+    <string name="obrolan">Obrolan</string>
+    <string name="profile">Profile</string>
+    <string name="melacak_orderanmu">Melacak Orderanmu</string>
+    <string name="menunggu_pembayaran">Menunggu Pembayaran</string>
+    <string name="produk_yang_ada_diwishlist">Produk yang ada di wishlist</string>
+    <string name="riwayat_pembelian">Riwayat Pembelian</string>
+    <string name="account_settings">Account settings</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="edit_picture">Edit picture</string>
+    <string name="remove_picture">Remove Picture</string>
+    <string name="alamat_rumah">Address</string>
+    <string name="ganti_password">Change password? click here</string>
+    <string name="hint_alamat">Enter your address here</string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="konfirmasi_pembelian">Konfirmasi Pembelian</string>
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="keranjang_kamu">Keranjang Kamu</string>
+    <string name="pakai_promo">Pakai Promo</string>
+    <string name="terapkan">Terapkan</string>
+    <string name="masukkan_kode_promo">Masukkan kode promo</string>
+    <string name="total_pembayaran">Total Pembayaran</string>
+    <string name="lanjutkan_pembayaran">Lanjutkan Pembayaran</string>
+    <string name="lanjut_berbelanja">Lanjut Berbelanja</string>
 
 </resources>

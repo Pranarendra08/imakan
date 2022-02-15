@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".profile.ProfileFragment">
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/riwayat_pembelian"
+            android:textColor="@color/biru"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView5" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/show_more"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView62"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView62" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/show_more"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView57"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/show_more"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView56"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/produk_yang_ada_diwishlist"
+            android:textColor="@color/biru"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView4" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/profile"
+            android:textColor="@color/biru"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="TextView"
+            android:textColor="@color/biru"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52"
+            tools:text="M Helmi Azhar" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:text="TextView"
+            android:textColor="@color/abu_abu"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/melacak_orderanmu"
+            android:textColor="@color/biru"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/menunggu_pembayaran"
+            android:textColor="@color/biru"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/show_more"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView55"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView55" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView5"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView6"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView62" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_acc_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_rectangle_hijau"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/account_settings"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

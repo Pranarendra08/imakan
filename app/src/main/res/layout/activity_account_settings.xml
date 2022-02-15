@@ -9,45 +9,79 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".signup.SignUpActivity">
+        tools:context=".profile.AccountSettingsActivity">
 
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/imakan"
-            android:textColor="@color/biru"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/nunito_sans_bold"
-            android:text="@string/buat_akun_baru"
-            android:textColor="@color/biru"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30" />
-
-        <TextView
-            android:id="@+id/textView29"
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/welcome"
-            android:textColor="@color/biru"
-            android:textSize="28sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="@string/account_settings"
+            android:textColor="@color/biru"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/profile_picture"
+            android:textColor="@color/biru"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView60"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/shape_rectangle_hijau"
+            android:fontFamily="@font/nunito_sans"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/edit_picture"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_line_merah"
+            android:gravity="center"
+            android:text="@string/remove_picture"
+            android:textColor="@color/abu_abu"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/textView63"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView63" />
 
         <EditText
             android:id="@+id/editTextTextPersonName7"
@@ -59,7 +93,7 @@
             android:background="@drawable/shape_rectangle_hijau_muda"
             android:ems="10"
             android:fontFamily="@font/nunito_sans"
-            android:hint="Confirm your password, min. 8 characters"
+            android:hint="@string/ganti_password"
             android:inputType="textPersonName"
             android:paddingStart="8dp"
             android:textColor="@color/black"
@@ -77,8 +111,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans"
-            android:text="@string/confirm_password"
-            android:textColor="@color/abu_abu"
+            android:text="@string/password"
+            android:textColor="@color/biru"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
@@ -93,7 +127,7 @@
             android:background="@drawable/shape_rectangle_hijau_muda"
             android:ems="10"
             android:fontFamily="@font/nunito_sans"
-            android:hint="Enter your password, min. 8 characters"
+            android:hint="@string/hint_alamat"
             android:inputType="textPersonName"
             android:paddingStart="8dp"
             android:textColor="@color/black"
@@ -111,8 +145,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans"
-            android:text="@string/password"
-            android:textColor="@color/abu_abu"
+            android:text="@string/alamat_rumah"
+            android:textColor="@color/biru"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
@@ -146,7 +180,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans"
             android:text="@string/email"
-            android:textColor="@color/abu_abu"
+            android:textColor="@color/biru"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
@@ -180,7 +214,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans"
             android:text="@string/phone_number"
-            android:textColor="@color/abu_abu"
+            android:textColor="@color/biru"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
@@ -214,75 +248,82 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans"
             android:text="@string/nama"
-            android:textColor="@color/abu_abu"
+            android:textColor="@color/biru"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-        <ImageView
-            android:id="@+id/imageView6"
+        <TextView
+            android:id="@+id/textView66"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6"
-            app:srcCompat="@drawable/ic_password" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
 
-        <ImageView
-            android:id="@+id/imageView8"
+        <TextView
+            android:id="@+id/textView67"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName7"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
-            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName7"
-            app:srcCompat="@drawable/ic_password" />
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Help center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
 
         <Button
-            android:id="@+id/btn_login2"
+            android:id="@+id/button6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/shape_rectangle_hijau"
-            android:fontFamily="@font/nunito_sans"
-            android:text="@string/buat_akun_baru"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Save"
             android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_line_hijau"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Notification Settings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
 
         <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/tv_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="24dp"
-            android:fontFamily="@font/nunito_sans"
-            android:text="@string/already_have_an_account"
-            android:textColor="@color/hijau_9e"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Logout"
+            android:textColor="@color/warna_merah"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
+            app:layout_constraintTop_toBottomOf="@+id/button6" />
 
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:fontFamily="@font/nunito_sans"
-            android:text="@string/login"
-            android:textColor="@color/warna_hijau"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView37"
-            app:layout_constraintStart_toEndOf="@+id/textView37"
-            app:layout_constraintTop_toTopOf="@+id/textView37" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
+

@@ -16,7 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
-            android:name=".DetailActivity"
+            android:name=".cart.payment.PaymentPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cart.orderConfirmation.OrderConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.AccountSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cart.CartFragment"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".home.HomePictAdapter"

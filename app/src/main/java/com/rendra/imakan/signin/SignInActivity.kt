@@ -18,6 +18,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_in)
 
         btn_login.setOnClickListener {
+            finishAffinity()
             startActivity(Intent(this, HomePageActivity::class.java))
         }
 
