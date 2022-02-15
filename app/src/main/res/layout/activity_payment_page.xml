@@ -22,7 +22,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView9" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_total_pembayaran" />
 
         <TextView
             android:id="@+id/textView79"
@@ -74,7 +74,7 @@
             app:srcCompat="@drawable/ic_back" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView9"
+            android:id="@+id/rv_total_pembayaran"
             android:layout_width="0dp"
             android:layout_height="190dp"
             android:layout_marginStart="16dp"
