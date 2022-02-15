@@ -59,5 +59,9 @@
     <string name="total_pembayaran">Total Pembayaran</string>
     <string name="lanjutkan_pembayaran">Lanjutkan Pembayaran</string>
     <string name="lanjut_berbelanja">Lanjut Berbelanja</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="transfer_bank">Transfer Bank</string>
+    <string name="bayar_diminimarket">Bayar di minimarket</string>
+    <string name="bayar">Bayar</string>
 
 </resources>
