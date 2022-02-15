@@ -50,5 +50,14 @@
     <string name="ganti_password">Change password? click here</string>
     <string name="hint_alamat">Enter your address here</string>
     <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="konfirmasi_pembelian">Konfirmasi Pembelian</string>
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="keranjang_kamu">Keranjang Kamu</string>
+    <string name="pakai_promo">Pakai Promo</string>
+    <string name="terapkan">Terapkan</string>
+    <string name="masukkan_kode_promo">Masukkan kode promo</string>
+    <string name="total_pembayaran">Total Pembayaran</string>
+    <string name="lanjutkan_pembayaran">Lanjutkan Pembayaran</string>
+    <string name="lanjut_berbelanja">Lanjut Berbelanja</string>
 
 </resources>

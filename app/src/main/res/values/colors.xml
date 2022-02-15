@@ -16,4 +16,5 @@
     <color name="transparant_black">#80000000</color>
     <color name="harga_detail">#71DFE7</color>
     <color name="warna_merah">#FF0927</color>
+    <color name="warna_abu">#EDE9E9</color>
 </resources>
