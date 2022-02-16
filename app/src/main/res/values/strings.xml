@@ -63,5 +63,8 @@
     <string name="transfer_bank">Transfer Bank</string>
     <string name="bayar_diminimarket">Bayar di minimarket</string>
     <string name="bayar">Bayar</string>
+    <string name="cara_pembayaran">Cara pembayaran:</string>
+    <string name="desc_detail_payment">Pembayaran maksimal 1 x 24 jam. Jika lewat lebih dari 24 jam akan dibatalkan secara oitomatis</string>
+    <string name="konfirmasi_pembayaran">Konfirmasi Pembayaran</string>
 
 </resources>
