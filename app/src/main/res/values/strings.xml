@@ -66,5 +66,7 @@
     <string name="cara_pembayaran">Cara pembayaran:</string>
     <string name="desc_detail_payment">Pembayaran maksimal 1 x 24 jam. Jika lewat lebih dari 24 jam akan dibatalkan secara oitomatis</string>
     <string name="konfirmasi_pembayaran">Konfirmasi Pembayaran</string>
+    <string name="pembayaran_berhasil">Yay!\nPembayaran\nBerhasil</string>
+    <string name="desc_payment_success">We will inform you via email later\nonce the transaction has been\naccepted</string>
 
 </resources>

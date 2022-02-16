@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Imakan">
         <activity
+            android:name=".cart.paymentSuccess.PaymentSuccessPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".cart.paymentDetail.PaymentDetailActivity"
             android:exported="false" />
         <activity
