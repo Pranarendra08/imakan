@@ -8,10 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rendra.imakan.R
 import com.rendra.imakan.model.FindExplore
-import com.rendra.imakan.model.ikanDetail
 
 class FindExploreAdapter(private var data: ArrayList<FindExplore>,
-                         private val listener:(ikanDetail) -> Unit)
+                         private val listener:(FindExplore) -> Unit)
     : RecyclerView.Adapter<FindExploreAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
@@ -35,16 +34,12 @@ class FindExploreAdapter(private var data: ArrayList<FindExplore>,
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val btnFind:TextView = view.findViewById(R.id.btn_find)
 
-        fun bindItem(data: FindExplore, listener: (ikanDetail) -> Unit, context: Context) {
-            btnFind.setText(data.nama)
+        fun bindItem(data: FindExplore, listener: (FindExplore) -> Unit, context: Context) {
+            btnFind.text = data.nama
 
             itemView.setOnClickListener {
                 listener(data)
             }
-        }
-
-        private fun listener(data: FindExplore) {
-            TODO("Not yet implemented")
         }
     }
 
