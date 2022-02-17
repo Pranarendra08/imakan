@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.rendra.imakan.R
 
 
-class RekomendasiFragment : Fragment() {
+class BestSellerFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

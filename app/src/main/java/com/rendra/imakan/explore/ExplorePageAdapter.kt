@@ -35,23 +35,8 @@ class ExplorePageAdapter(private var data: List<ikanHome>,
     override fun getItemCount(): Int = data.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val tvNama:TextView = view.findViewById(R.id.tv_nama_ikan)
-        private val tvJarak:TextView = view.findViewById(R.id.tv_harga)
-
-        private val ivImage:ImageView = view.findViewById(R.id.iv_foto_ikan)
-
         fun bindItem(data:ikanHome, listener: (ikanHome) -> Unit, context: Context) {
-            tvNama.setText(data.nama)
-            tvJarak.setText(data.jarak)
 
-            Glide.with(context)
-                .load(data.url)
-                .apply(RequestOptions.fitCenterTransform())
-                .into(ivImage)
-
-            itemView.setOnClickListener {
-                listener(data)
-            }
         }
     }
 
