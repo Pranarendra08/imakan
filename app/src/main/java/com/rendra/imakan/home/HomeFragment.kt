@@ -39,13 +39,15 @@ class HomeFragment : Fragment() {
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
 
-        rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        tv_nama.setText(preferences.getValue("username"))
 
-        getData1()
+
+        rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        getData()
 
     }
 
-    private fun getData1() {
+    private fun getData() {
         mDatabase.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 dataList.clear()
