@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestBuilder
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.detail.DetailActivity
@@ -39,8 +40,12 @@ class HomeFragment : Fragment() {
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
 
-        tv_nama.setText(preferences.getValue("username"))
+        tv_nama.text = preferences.getValue("username")
 
+        Glide.with(this)
+            .load(preferences.getValue("url"))
+            .apply(RequestOptions.circleCropTransform())
+            .into(iv_photo)
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         getData()

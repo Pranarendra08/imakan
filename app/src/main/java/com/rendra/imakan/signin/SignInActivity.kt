@@ -48,9 +48,6 @@ class SignInActivity : AppCompatActivity() {
             } else {
                 pushLogin(iUsername, iPassword)
             }
-
-            finishAffinity()
-            startActivity(Intent(this, HomePageActivity::class.java))
         }
 
         btn_register.setOnClickListener {
