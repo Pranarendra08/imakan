@@ -14,7 +14,7 @@ class RekomendasiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rekomendasi, container, false)
+        return inflater.inflate(R.layout.rv_rekomendasi_best, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

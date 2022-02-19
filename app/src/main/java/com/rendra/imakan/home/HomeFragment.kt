@@ -23,8 +23,10 @@ class HomeFragment : Fragment() {
 
     private lateinit var preferences: Preferences
     private lateinit var mDatabase: DatabaseReference
+    private lateinit var mDatabase2: DatabaseReference
 
     private var dataList = ArrayList<ikanHome>()
+    private var dataList2 = ArrayList<ikanDetail>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,8 +41,9 @@ class HomeFragment : Fragment() {
 
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
+        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
 
-        tv_nama.text = preferences.getValue("username")
+        tv_nama.text = preferences.getValue("nama")
 
         Glide.with(this)
             .load(preferences.getValue("url"))
@@ -48,7 +51,9 @@ class HomeFragment : Fragment() {
             .into(iv_photo)
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        rv_bestseller.layoutManager = LinearLayoutManager(context!!.applicationContext)
         getData()
+        getData2()
 
     }
 
@@ -60,10 +65,29 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanHome::class.java)
                     dataList.add(ikan!!)
                 }
-
                 rv_home_pict.adapter = HomePictAdapter(dataList) {
                     var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
+                }
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+
+        })
+    }
+    private fun getData2() {
+        mDatabase2.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                dataList2.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
+                    dataList2.add(ikan!!)
+                }
+                rv_bestseller.adapter = BestSellerAdapter(dataList2) {
+                    startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
             }
 
