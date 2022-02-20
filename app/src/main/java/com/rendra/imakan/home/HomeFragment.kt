@@ -24,9 +24,11 @@ class HomeFragment : Fragment() {
     private lateinit var preferences: Preferences
     private lateinit var mDatabase: DatabaseReference
     private lateinit var mDatabase2: DatabaseReference
+    private lateinit var mDatabase3: DatabaseReference
 
     private var dataList = ArrayList<ikanHome>()
     private var dataList2 = ArrayList<ikanDetail>()
+    private var dataList3 = ArrayList<ikanDetail>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +43,8 @@ class HomeFragment : Fragment() {
 
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
-        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
+        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BestSeller")
+        mDatabase3 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Rekomendasi")
 
         tv_nama.text = preferences.getValue("nama")
 
@@ -51,9 +54,13 @@ class HomeFragment : Fragment() {
             .into(iv_photo)
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        rv_bestseller.layoutManager = LinearLayoutManager(context!!.applicationContext)
         getData()
+
+        rv_bestseller.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         getData2()
+
+        rv_rekomendasi.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        getData3()
 
     }
 
@@ -78,6 +85,7 @@ class HomeFragment : Fragment() {
 
         })
     }
+
     private fun getData2() {
         mDatabase2.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -94,7 +102,25 @@ class HomeFragment : Fragment() {
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
             }
+        })
+    }
 
+    private fun getData3() {
+        mDatabase3.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                dataList3.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
+                    dataList3.add(ikan!!)
+                }
+                rv_rekomendasi.adapter = BestSellerAdapter(dataList3) {
+                    startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
+            }
         })
     }
 
