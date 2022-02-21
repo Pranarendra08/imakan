@@ -87,7 +87,7 @@ class ExploreFragment : Fragment() {
                     dataList2.add(ikan!!)
                 }
 
-                rv_explore_image.adapter = FindExploreAdapter(dataList2) {
+                rv_explore_image.adapter = ExplorePageAdapter(dataList2) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
             }
