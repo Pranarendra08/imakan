@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".home.HomePictAdapter">
 
     <ImageView
@@ -113,12 +113,14 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_foto_ikan"
         tools:src="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tv_harga5"
+        android:id="@+id/tv_harga3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -131,7 +133,7 @@
         app:layout_constraintStart_toStartOf="@+id/iv_foto_ikan3" />
 
     <TextView
-        android:id="@+id/tv_nama_ikan5"
+        android:id="@+id/tv_nama_ikan3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
