@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.bumptech.glide.RequestBuilder
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.detail.DetailActivity
@@ -25,10 +24,12 @@ class HomeFragment : Fragment() {
     private lateinit var mDatabase: DatabaseReference
     private lateinit var mDatabase2: DatabaseReference
     private lateinit var mDatabase3: DatabaseReference
+    private lateinit var mDatabase4: DatabaseReference
 
     private var dataList = ArrayList<ikanHome>()
     private var dataList2 = ArrayList<ikanDetail>()
     private var dataList3 = ArrayList<ikanDetail>()
+    private var dataList4 = ArrayList<ikanDetail>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,6 +46,7 @@ class HomeFragment : Fragment() {
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("home_ikan")
         mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BestSeller")
         mDatabase3 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Rekomendasi")
+        mDatabase4 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BeliLagi")
 
         tv_nama.text = preferences.getValue("nama")
 
@@ -54,13 +56,14 @@ class HomeFragment : Fragment() {
             .into(iv_photo)
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        rv_bestseller.layoutManager = LinearLayoutManager(context!!.applicationContext)
+        rv_rekomendasi.layoutManager = LinearLayoutManager(context!!.applicationContext)
+        rv_beli_lagi.layoutManager = LinearLayoutManager(context!!.applicationContext)
+
         getData()
-
-        rv_bestseller.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         getData2()
-
-        rv_rekomendasi.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         getData3()
+        getData4()
 
     }
 
@@ -76,7 +79,6 @@ class HomeFragment : Fragment() {
                     var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
                 }
-
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -94,7 +96,7 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList2.add(ikan!!)
                 }
-                rv_bestseller.adapter = BestSellerAdapter(dataList2) {
+                rv_bestseller.adapter = HomeSellerAdapter(dataList2) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
             }
@@ -113,7 +115,26 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList3.add(ikan!!)
                 }
-                rv_rekomendasi.adapter = BestSellerAdapter(dataList3) {
+                rv_rekomendasi.adapter = HomeSellerAdapter(dataList3) {
+                    startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(context, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+        })
+    }
+
+    private fun getData4() {
+        mDatabase4.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                dataList4.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
+                    dataList4.add(ikan!!)
+                }
+                rv_beli_lagi.adapter = HomeSellerAdapter(dataList4) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
             }

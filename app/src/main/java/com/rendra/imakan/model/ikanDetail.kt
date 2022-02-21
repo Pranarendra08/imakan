@@ -11,6 +11,6 @@ data class ikanDetail(
     var harga:String ? = "",
     var toko:String ? = "",
     var tersedia:String ? = "",
-    var rating:String ? = "",
+    var rate:String ? = "",
 
 ) : Parcelable

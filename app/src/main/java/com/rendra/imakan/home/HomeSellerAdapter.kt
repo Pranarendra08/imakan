@@ -1,43 +1,35 @@
 package com.rendra.imakan.home
 
 import android.content.Context
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.google.firebase.database.*
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanDetail
-import com.rendra.imakan.model.ikanHome
-import com.rendra.imakan.utils.Preferences
-import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.rv_rekomendasi_best.*
 
 
-class BestSellerAdapter(private var data: List<ikanDetail>,
-                         private val listener:(ikanDetail) -> Unit)
-    : RecyclerView.Adapter<BestSellerAdapter.ViewHolder>() {
+class HomeSellerAdapter(private var data: List<ikanDetail>,
+                        private val listener:(ikanDetail) -> Unit)
+    : RecyclerView.Adapter<HomeSellerAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): BestSellerAdapter.ViewHolder {
+    ): HomeSellerAdapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         contextAdapter = parent.context
         val inflatedView = layoutInflater.inflate(R.layout.rv_rekomendasi_best, parent, false)
         return ViewHolder(inflatedView)
     }
 
-    override fun onBindViewHolder(holder: BestSellerAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: HomeSellerAdapter.ViewHolder, position: Int) {
         holder.bindItem(data[position], listener, contextAdapter)
     }
 
@@ -59,7 +51,7 @@ class BestSellerAdapter(private var data: List<ikanDetail>,
             tvTersedia.text = data.tersedia
             tvJarak.text = data.jarak
             tvToko.text = data.toko
-            tvRate.text = data.rating
+            tvRate.text = data.rate
 
             Glide.with(context)
                 .load(data.url)

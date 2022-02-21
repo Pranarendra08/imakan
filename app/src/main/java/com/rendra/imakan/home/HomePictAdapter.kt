@@ -46,7 +46,7 @@ class HomePictAdapter(private var data: List<ikanHome>,
 
             Glide.with(context)
                 .load(data.url)
-                .apply(RequestOptions.fitCenterTransform())
+                .apply(RequestOptions.centerInsideTransform())
                 .into(ivImage)
 
             itemView.setOnClickListener {
