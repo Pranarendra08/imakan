@@ -1,0 +1,20 @@
+{
+  "ikan_bandeng" : {
+    "harga" : "Rp. 28,000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Bandeng",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Segar Abadi",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_bandeng.png?alt=media&token=c5f8738e-9931-404d-9db1-278f64745286"
+  },
+  "ikan_emas" : {
+    "harga" : "38.000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Emas",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Segar Abadi",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_emas.png?alt=media&token=5e05e192-efd1-464a-a130-33294c908fb4"
+  }
+}

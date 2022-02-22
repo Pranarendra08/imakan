@@ -1,0 +1,20 @@
+{
+  "ikan_patin" : {
+    "harga" : "Rp. 15,000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Patin Laut Ancol",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 21 kg)",
+    "toko" : "Ancol Fish Market",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_patin_ancol.png?alt=media&token=b2bc81dc-87c9-4e8f-8973-912aaee20ef1"
+  },
+  "ikan_sarden" : {
+    "harga" : "Rp. 25,000 / Kg",
+    "jarak" : "3 Km dari tempat kamu",
+    "nama" : "Ikan Sarden",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 4 kg)",
+    "toko" : "Toko Ikan Asana",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_sarden.png?alt=media&token=a171fda5-da59-482a-bd1b-68da237d0c07"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ikan1" : {
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Tuna",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fpict_home.png?alt=media&token=f0e4f861-0996-42f9-bbc1-8af6d2d169a7"
+  },
+  "ikan2" : {
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Tuna2",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fpict_home.png?alt=media&token=f0e4f861-0996-42f9-bbc1-8af6d2d169a7"
+  }
+}

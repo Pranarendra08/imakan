@@ -1,0 +1,74 @@
+{
+  "Ikan_dori" : {
+    "harga" : "Rp. 55,000 / Kg",
+    "jarak" : "11 Km dari tempat kamu",
+    "nama" : "Ikan Dori",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 5 kg)",
+    "toko" : "Toko Ikan Segar Mas Yoru",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_dori.png?alt=media&token=0be6541b-170f-472e-9c29-40df97db7d12"
+  },
+  "ikan_bandeng" : {
+    "harga" : "Rp. 20,000 / Kg",
+    "jarak" : "3 Km dari tempat kamu",
+    "nama" : "Ikan Bandeng",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 5 kg)",
+    "toko" : "Toko Ikan Asana",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_bandeng.png?alt=media&token=c5f8738e-9931-404d-9db1-278f64745286r"
+  },
+  "ikan_emas" : {
+    "harga" : "Rp. 20,000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Emas",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Segar Abadi",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_emas_explore.png?alt=media&token=7e709b74-3892-4a7a-b529-edf2a0e77dee"
+  },
+  "ikan_kembung" : {
+    "harga" : "Rp. 17,000 / Kg",
+    "jarak" : "3 Km dari tempat kamu",
+    "nama" : "Ikan Kembung",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Asana",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_kembung.png?alt=media&token=e4cb0d9e-683d-4502-95f6-23ad6a541642"
+  },
+  "ikan_lele" : {
+    "harga" : "Rp. 36,000 / Kg",
+    "jarak" : "11 Km dari tempat kamu",
+    "nama" : "Ikan Lele",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 15 kg)",
+    "toko" : "Toko Ikan Segar Mas Yoru",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_lele.png?alt=media&token=6edc8b2c-7ed2-4b2d-98eb-0d4a3171e235"
+  },
+  "ikan_salmon" : {
+    "harga" : "Rp. 85,000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Salmon",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Segar Abadi",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_salmon.png?alt=media&token=a472f240-8c70-4935-afdb-4c6faace5a1a"
+  },
+  "ikan_tongkol" : {
+    "harga" : "Rp. 50,000 / Kg",
+    "jarak" : "3 Km dari tempat kamu",
+    "nama" : "Ikan Tongkol",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 5 kg)",
+    "toko" : "Toko Ikan Asana",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_tongkol.png?alt=media&token=4f979e66-34ea-4d92-b262-e672ea9a8a89"
+  },
+  "ikan_tuna" : {
+    "harga" : "Rp. 38,000 / Kg",
+    "jarak" : "5 Km dari tempat kamu",
+    "nama" : "Ikan Tuna",
+    "rate" : "4.8",
+    "tersedia" : "(tersedia 10 kg)",
+    "toko" : "Toko Ikan Segar Abadi",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/ikan%2Fikan_tuna.png?alt=media&token=c857609a-de91-4368-a0c6-c795dee7da58"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bang" : {
+    "email" : "bang@gmail.com",
+    "password" : "021",
+    "phoneNumber" : "021",
+    "url" : "https://firebasestorage.googleapis.com/v0/b/imakan-493ae.appspot.com/o/image%2FIMG-20191102-WA0022.jpg?alt=media&token=296e0be2-99dc-4057-9e58-ed3249b2074d",
+    "username" : "bang"
+  },
+  "rendra" : {
+    "email" : "rendra@gmail.com",
+    "password" : "1234",
+    "phoneNumber" : "0821",
+    "url" : "",
+    "username" : "rendra"
+  }
+}
