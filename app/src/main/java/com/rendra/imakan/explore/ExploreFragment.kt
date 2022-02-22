@@ -43,6 +43,7 @@ class ExploreFragment : Fragment() {
 
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("explore")
+        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("explorePage")
 
         tv_nama.text = preferences.getValue("nama")
 
