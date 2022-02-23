@@ -13,6 +13,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.detail.DetailActivity
 import com.rendra.imakan.R
+import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.model.ikanHome
 import com.rendra.imakan.utils.Preferences
@@ -30,6 +31,11 @@ class HomeFragment : Fragment() {
     private var dataList2 = ArrayList<ikanDetail>()
     private var dataList3 = ArrayList<ikanDetail>()
     private var dataList4 = ArrayList<ikanDetail>()
+
+    private var dataList1Toko = ArrayList<TentangToko>()
+    private var dataList2Toko = ArrayList<TentangToko>()
+    private var dataList3Toko = ArrayList<TentangToko>()
+    private var dataList4Toko = ArrayList<TentangToko>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -80,6 +86,11 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanHome::class.java)
                     dataList.add(ikan!!)
                 }
+                dataList1Toko.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var toko = getdataSnapshot.getValue(TentangToko::class.java)
+                    dataList1Toko.add(toko!!)
+                }
                 rv_home_pict.adapter = HomePictAdapter(dataList) {
                     var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                     startActivity(intent)
@@ -101,6 +112,11 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList2.add(ikan!!)
                 }
+                dataList2Toko.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var toko = getdataSnapshot.getValue(TentangToko::class.java)
+                    dataList2Toko.add(toko!!)
+                }
                 rv_bestseller.adapter = HomeSellerAdapter(dataList2) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
@@ -120,6 +136,11 @@ class HomeFragment : Fragment() {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList3.add(ikan!!)
                 }
+                dataList3Toko.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var toko = getdataSnapshot.getValue(TentangToko::class.java)
+                    dataList3Toko.add(toko!!)
+                }
                 rv_rekomendasi.adapter = HomeSellerAdapter(dataList3) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))
                 }
@@ -138,6 +159,11 @@ class HomeFragment : Fragment() {
                 for (getdataSnapshot in snapshot.children) {
                     var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList4.add(ikan!!)
+                }
+                dataList4Toko.clear()
+                for (getdataSnapshot in snapshot.children) {
+                    var toko = getdataSnapshot.getValue(TentangToko::class.java)
+                    dataList4Toko.add(toko!!)
                 }
                 rv_beli_lagi.adapter = HomeSellerAdapter(dataList4) {
                     startActivity(Intent(context, DetailActivity::class.java).putExtra("data", it))

@@ -10,14 +10,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
+import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 
 
 class HomeSellerAdapter(private var data: List<ikanDetail>,
-                        private val listener:(ikanDetail) -> Unit)
+                        private val listener:(ikanDetail) -> Unit,
+                        private var data2: List<TentangToko>,
+                        private val listener2: (TentangToko) -> Unit)
     : RecyclerView.Adapter<HomeSellerAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
+    lateinit var contextAdapter2: Context
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -25,12 +29,13 @@ class HomeSellerAdapter(private var data: List<ikanDetail>,
     ): HomeSellerAdapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         contextAdapter = parent.context
+        contextAdapter2 = parent.context
         val inflatedView = layoutInflater.inflate(R.layout.rv_rekomendasi_best, parent, false)
         return ViewHolder(inflatedView)
     }
 
     override fun onBindViewHolder(holder: HomeSellerAdapter.ViewHolder, position: Int) {
-        holder.bindItem(data[position], listener, contextAdapter)
+        holder.bindItem(data[position], listener, data2[position], listener2, contextAdapter)
     }
 
     override fun getItemCount(): Int = data.size
@@ -45,12 +50,12 @@ class HomeSellerAdapter(private var data: List<ikanDetail>,
 
         private val ivPhoto:ImageView = view.findViewById(R.id.iv_best_seller)
 
-        fun bindItem(data: ikanDetail, listener: (ikanDetail) -> Unit, context: Context) {
+        fun bindItem(data: ikanDetail, listener: (ikanDetail) -> Unit, data2: TentangToko, listener2: (TentangToko) -> Unit, context: Context) {
             tvIkan.text = data.nama
             tvHarga.text = data.harga
             tvTersedia.text = data.tersedia
             tvJarak.text = data.jarak
-            tvToko.text = data.toko
+            tvToko.text = data2.namaToko
             tvRate.text = data.rate
 
             Glide.with(context)
@@ -60,6 +65,7 @@ class HomeSellerAdapter(private var data: List<ikanDetail>,
 
             itemView.setOnClickListener {
                 listener(data)
+                listener2(data2)
             }
         }
     }
