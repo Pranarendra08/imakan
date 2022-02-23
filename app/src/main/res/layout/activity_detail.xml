@@ -62,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_height="51dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:background="@color/warna_hijau"
@@ -239,10 +239,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="3dp"
             android:fontFamily="@font/nunito_semibold"
+            android:text="Jakarta Selatan"
             app:layout_constraintBottom_toBottomOf="@+id/textView39"
             app:layout_constraintStart_toEndOf="@+id/textView39"
-            app:layout_constraintTop_toTopOf="@+id/textView39"
-            tools:text="Jakarta Selatan" />
+            app:layout_constraintTop_toTopOf="@+id/textView39" />
 
         <TextView
             android:id="@+id/textView41"
@@ -266,12 +266,12 @@
             android:text="@string/ulasan_dari_pembeli"
             android:textColor="@color/biru"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView10" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView9"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="116dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -279,9 +279,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
-            android:name="com.rendra.imakan.detail.TentangTokoFragment"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView10"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_marginStart="16dp"

@@ -5,7 +5,28 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="70dp"
-    tools:context=".detail.TentangTokoFragment">
+    tools:context=".detail.TentangTokoAdapter">
+
+    <TextView
+        android:id="@+id/tv_aktifitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_light"
+        android:text="2 jam"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_light"
+        android:text=" yang lalu"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_aktifitas" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -51,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_sans_light"
-        android:text="Aktif 2 jam yang lalu"
+        android:text="Aktif "
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

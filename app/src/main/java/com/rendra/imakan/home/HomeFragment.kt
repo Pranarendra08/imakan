@@ -51,6 +51,7 @@ class HomeFragment : Fragment() {
             .child("rekomendasi")
         mDatabase4 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child("BeliLagi")
+            .child("toko")
 
         tv_nama.text = preferences.getValue("nama")
 
