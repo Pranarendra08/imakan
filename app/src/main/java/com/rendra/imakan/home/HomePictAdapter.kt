@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
-import com.rendra.imakan.model.ikanHome
+import com.rendra.imakan.model.ikanDetail
 
-class HomePictAdapter(private var data: List<ikanHome>,
-                      private val listener:(ikanHome) -> Unit)
+class HomePictAdapter(private var data: ArrayList<ikanDetail>,
+                      private val listener:(ikanDetail) -> Unit)
     : RecyclerView.Adapter<HomePictAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
@@ -40,7 +40,7 @@ class HomePictAdapter(private var data: List<ikanHome>,
 
         private val ivImage:ImageView = view.findViewById(R.id.iv_foto_ikan)
 
-        fun bindItem(data:ikanHome, listener: (ikanHome) -> Unit, context: Context) {
+        fun bindItem(data: ikanDetail, listener: (ikanDetail) -> Unit, context: Context) {
             tvNama.setText(data.nama)
             tvJarak.setText(data.jarak)
 

@@ -14,7 +14,6 @@ import com.google.firebase.database.*
 import com.rendra.imakan.detail.DetailActivity
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanDetail
-import com.rendra.imakan.model.ikanHome
 import com.rendra.imakan.utils.Preferences
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -26,7 +25,7 @@ class HomeFragment : Fragment() {
     private lateinit var mDatabase3: DatabaseReference
     private lateinit var mDatabase4: DatabaseReference
 
-    private var dataList = ArrayList<ikanHome>()
+    private var dataList = ArrayList<ikanDetail>()
     private var dataList2 = ArrayList<ikanDetail>()
     private var dataList3 = ArrayList<ikanDetail>()
     private var dataList4 = ArrayList<ikanDetail>()
@@ -45,16 +44,12 @@ class HomeFragment : Fragment() {
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child("home")
-            .child("toko")
         mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child("BestSeller")
-            .child("toko")
         mDatabase3 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child("rekomendasi")
-            .child("toko")
         mDatabase4 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child("BeliLagi")
-            .child("toko")
 
         tv_nama.text = preferences.getValue("nama")
 
@@ -80,7 +75,7 @@ class HomeFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 dataList.clear()
                 for (getdataSnapshot in snapshot.children) {
-                    var ikan = getdataSnapshot.getValue(ikanHome::class.java)
+                    var ikan = getdataSnapshot.getValue(ikanDetail::class.java)
                     dataList.add(ikan!!)
                 }
                 rv_home_pict.adapter = HomePictAdapter(dataList) {
