@@ -23,7 +23,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView5" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_wishlist" />
 
         <TextView
             android:id="@+id/textView61"
@@ -69,7 +69,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView4" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_menunggu_pembayaran" />
 
         <TextView
             android:id="@+id/textView52"
@@ -85,7 +85,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView53"
+            android:id="@+id/tv_nama"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -95,13 +95,13 @@
             android:text="TextView"
             android:textColor="@color/biru"
             android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/iv_photo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView52"
             tools:text="M Helmi Azhar" />
 
         <TextView
-            android:id="@+id/textView54"
+            android:id="@+id/tv_about"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
@@ -110,13 +110,15 @@
             android:text="TextView"
             android:textColor="@color/abu_abu"
             android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+            app:layout_constraintEnd_toStartOf="@+id/iv_photo"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iv_photo"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
@@ -136,7 +138,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_about" />
 
         <TextView
             android:id="@+id/textView56"
@@ -149,7 +151,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_lacak_order" />
 
         <TextView
             android:id="@+id/textView18"
@@ -163,7 +165,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView55" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView3"
+            android:id="@+id/rv_lacak_order"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_marginStart="16dp"
@@ -174,7 +176,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView4"
+            android:id="@+id/rv_menunggu_pembayaran"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_marginStart="16dp"
@@ -185,7 +187,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView56" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView5"
+            android:id="@+id/rv_wishlist"
             android:layout_width="0dp"
             android:layout_height="110dp"
             android:layout_marginStart="16dp"
@@ -196,7 +198,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView6"
+            android:id="@+id/rv_pembelian"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_marginStart="16dp"
@@ -225,7 +227,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView6" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_pembelian" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -13,7 +13,6 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.detail.DetailActivity
 import com.rendra.imakan.R
-import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.model.ikanHome
 import com.rendra.imakan.utils.Preferences
@@ -62,7 +61,7 @@ class HomeFragment : Fragment() {
         Glide.with(this)
             .load(preferences.getValue("url"))
             .apply(RequestOptions.circleCropTransform())
-            .into(iv_photo)
+            .into(imageView2)
 
         rv_home_pict.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         rv_bestseller.layoutManager = LinearLayoutManager(context!!.applicationContext)

@@ -17,7 +17,7 @@ import com.rendra.imakan.model.FindExplore
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.utils.Preferences
 import kotlinx.android.synthetic.main.fragment_explore.*
-import kotlinx.android.synthetic.main.fragment_explore.iv_photo
+import kotlinx.android.synthetic.main.fragment_explore.imageView2
 import kotlinx.android.synthetic.main.fragment_explore.tv_nama
 
 
@@ -51,7 +51,7 @@ class ExploreFragment : Fragment() {
         Glide.with(this)
             .load(preferences.getValue("url"))
             .apply(RequestOptions.circleCropTransform())
-            .into(iv_photo)
+            .into(imageView2)
 
         rv_find_explore.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         rv_explore_image.layoutManager = LinearLayoutManager(context!!.applicationContext)

@@ -40,7 +40,7 @@
             tools:text="Rendra08" />
 
         <ImageView
-            android:id="@+id/iv_photo"
+            android:id="@+id/imageView2"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginEnd="16dp"
