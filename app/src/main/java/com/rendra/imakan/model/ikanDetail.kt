@@ -9,8 +9,7 @@ data class ikanDetail(
     var nama:String ? = "",
     var url:String ? = "",
     var harga:String ? = "",
-    var toko:String ? = "",
     var tersedia:String ? = "",
     var rate:String ? = "",
-
+    var namaToko:String ? = "",
 ) : Parcelable
