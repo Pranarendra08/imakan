@@ -29,7 +29,7 @@
         app:layout_constraintStart_toEndOf="@+id/tv_aktifitas" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/iv_photo_toko"
         android:layout_width="70dp"
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
         tools:src="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/tv_nama_toko"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_sans"
@@ -55,10 +55,10 @@
         android:text="Jumlah transaksi berhasil:"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_toko" />
 
     <TextView
-        android:id="@+id/textView47"
+        android:id="@+id/tv_transaksi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_semibold"

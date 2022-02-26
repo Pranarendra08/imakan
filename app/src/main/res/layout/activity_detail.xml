@@ -266,7 +266,7 @@
             android:text="@string/ulasan_dari_pembeli"
             android:textColor="@color/biru"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView10" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_tentang_toko" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView9"
@@ -280,7 +280,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView10"
+            android:id="@+id/rv_tentang_toko"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_marginStart="16dp"
