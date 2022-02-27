@@ -2,8 +2,10 @@ package com.rendra.imakan.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
@@ -38,6 +40,7 @@ class DetailActivity : AppCompatActivity() {
             .apply(RequestOptions.centerCropTransform())
             .into(iv_poster)
 
+        rv_tentang_toko.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         getData()
     }
 
@@ -49,6 +52,7 @@ class DetailActivity : AppCompatActivity() {
                     var toko = getSnapshot.getValue(TentangToko::class.java)
                     dataList.add(toko!!)
                 }
+
                 rv_tentang_toko.adapter = TentangTokoAdapter(dataList) {
 
                 }
