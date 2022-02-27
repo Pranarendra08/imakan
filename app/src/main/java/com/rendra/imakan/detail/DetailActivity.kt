@@ -11,6 +11,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.R
 import com.rendra.imakan.model.TentangToko
+import com.rendra.imakan.model.Ulasan
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.utils.Preferences
 import kotlinx.android.synthetic.main.activity_detail.*
@@ -20,7 +21,9 @@ import kotlin.collections.ArrayList
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var mDatabase: DatabaseReference
+    private lateinit var mDatabase2: DatabaseReference
     private var dataList = ArrayList<TentangToko>()
+    private var dataList2 = ArrayList<Ulasan>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +34,9 @@ class DetailActivity : AppCompatActivity() {
         mDatabase = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
             .child(data?.nama.toString())
             .child("toko")
+        mDatabase2 = FirebaseDatabase.getInstance("https://imakan-493ae-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ikan")
+            .child(data?.nama.toString())
+            .child("ulasan")
 
         tv_nama_ikan.text = data!!.nama
         tv_harga.text = data.harga
@@ -41,8 +47,12 @@ class DetailActivity : AppCompatActivity() {
             .into(iv_poster)
 
         rv_tentang_toko.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rv_ulasan.layoutManager = LinearLayoutManager(this.applicationContext)
+
         getData()
+        getData2()
     }
+
 
     private fun getData() {
         mDatabase.addValueEventListener(object : ValueEventListener {
@@ -54,6 +64,25 @@ class DetailActivity : AppCompatActivity() {
                 }
 
                 rv_tentang_toko.adapter = TentangTokoAdapter(dataList) {
+
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@DetailActivity, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+        })
+    }
+    private fun getData2() {
+        mDatabase2.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                dataList2.clear()
+                for (getSnapshot in snapshot.children) {
+                    var ulasan = getSnapshot.getValue(Ulasan::class.java)
+                    dataList2.add(ulasan!!)
+                }
+
+                rv_ulasan.adapter = UlasanAdapter(dataList2) {
 
                 }
             }

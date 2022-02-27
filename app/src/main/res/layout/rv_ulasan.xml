@@ -7,7 +7,7 @@
     tools:context=".detail.UlasanAdapter">
 
     <ImageView
-        android:id="@+id/imageView36"
+        android:id="@+id/iv_photo"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,12 +20,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:src="@drawable/ic_star"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toTopOf="@+id/tv_komentar"
         app:layout_constraintEnd_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toTopOf="@+id/textView23" />
+        app:layout_constraintTop_toTopOf="@+id/tv_nama" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -34,11 +34,11 @@
         android:text="John Doe"
         android:textColor="@color/biru"
         android:textSize="13sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/tv_komentar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -48,8 +48,8 @@
         android:text="Commodo, phasellus nec erat eu, facilisi. Ac id amet."
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView36"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintStart_toEndOf="@+id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -57,9 +57,9 @@
         android:layout_height="10dp"
         android:layout_marginEnd="4dp"
         android:src="@drawable/ic_star"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toTopOf="@+id/tv_komentar"
         app:layout_constraintEnd_toStartOf="@+id/imageView33"
-        app:layout_constraintTop_toTopOf="@+id/textView23" />
+        app:layout_constraintTop_toTopOf="@+id/tv_nama" />
 
     <ImageView
         android:id="@+id/imageView33"
@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_star"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toTopOf="@+id/tv_komentar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView23" />
+        app:layout_constraintTop_toTopOf="@+id/tv_nama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

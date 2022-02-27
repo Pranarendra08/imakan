@@ -72,7 +72,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView25"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView9" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_ulasan" />
 
         <ImageView
             android:id="@+id/imageView25"
@@ -269,7 +269,7 @@
             app:layout_constraintTop_toBottomOf="@+id/rv_tentang_toko" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView9"
+            android:id="@+id/rv_ulasan"
             android:layout_width="0dp"
             android:layout_height="116dp"
             android:layout_marginStart="16dp"

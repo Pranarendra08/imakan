@@ -5,8 +5,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class TentangToko(
+    var aktif:String ? = "",
     var namaToko:String ? = "",
     var transaksi:String ? = "",
-    var aktif:String ? = "",
     var urlToko:String ? = ""
 ) : Parcelable
