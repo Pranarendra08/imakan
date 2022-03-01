@@ -9,5 +9,6 @@ class User (
     var phoneNumber:String ?="",
     var email:String ?="",
     var url:String ?="",
+    var alamat:String ?="",
     var password:String ?=""
 ) : Parcelable

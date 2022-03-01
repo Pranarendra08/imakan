@@ -107,7 +107,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
         <Button
-            android:id="@+id/btn_bayar"
+            android:id="@+id/btn_bayar_hide"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -116,6 +116,24 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/shape_rectangle_hijau_muda"
+            android:gravity="center"
+            android:text="@string/bayar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_minimarket" />
+
+        <Button
+            android:id="@+id/btn_bayar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_rectangle_hijau"
             android:gravity="center"
             android:text="@string/bayar"
             android:textColor="@color/white"

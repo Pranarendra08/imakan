@@ -35,7 +35,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView7" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_keranjang" />
 
         <TextView
             android:id="@+id/textView72"
@@ -48,7 +48,7 @@
             android:textColor="@color/biru"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat" />
 
         <TextView
             android:id="@+id/textView65"
@@ -97,7 +97,7 @@
             app:srcCompat="@drawable/ic_location_pin" />
 
         <TextView
-            android:id="@+id/textView69"
+            android:id="@+id/tv_nama"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
@@ -108,18 +108,18 @@
             tools:text="@string/nama" />
 
         <TextView
-            android:id="@+id/textView70"
+            android:id="@+id/tv_phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/nunito_sans_light"
             app:layout_constraintStart_toEndOf="@+id/imageView30"
-            app:layout_constraintTop_toBottomOf="@+id/textView69"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama"
             tools:text="@string/phone_number" />
 
         <TextView
-            android:id="@+id/textView71"
+            android:id="@+id/tv_alamat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -128,11 +128,11 @@
             android:fontFamily="@font/nunito_sans_light"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView30"
-            app:layout_constraintTop_toBottomOf="@+id/textView70"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_number"
             tools:text="@string/alamat_pengiriman" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView7"
+            android:id="@+id/rv_keranjang"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginStart="16dp"
@@ -151,10 +151,10 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/shape_line_abu"
             android:ems="10"
+            android:hint="@string/masukkan_kode_promo"
             android:inputType="textPersonName"
             android:paddingStart="8dp"
-            android:text="@string/masukkan_kode_promo"
-            android:textColor="@color/abu_abu"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView74" />
@@ -175,7 +175,7 @@
             app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName9" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView8"
+            android:id="@+id/rv_total_pembayaran"
             android:layout_width="0dp"
             android:layout_height="190dp"
             android:layout_marginStart="16dp"
@@ -213,7 +213,7 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_lanjut_bayar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclerView8" />
+            app:layout_constraintTop_toBottomOf="@+id/rv_total_pembayaran" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

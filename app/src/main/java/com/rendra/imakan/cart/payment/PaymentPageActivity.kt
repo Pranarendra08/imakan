@@ -12,8 +12,10 @@ class PaymentPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_page)
 
-        btn_bayar.setOnClickListener {
+        btn_bayar_hide.setOnClickListener {
             startActivity(Intent(this, PaymentDetailActivity::class.java))
         }
+
     }
+
 }

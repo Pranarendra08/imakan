@@ -3,43 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="65dp"
     tools:context=".home.HomePictAdapter">
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_star" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
-        app:layout_constraintEnd_toStartOf="@+id/imageView17"
-        app:layout_constraintTop_toTopOf="@+id/imageView17"
-        app:srcCompat="@drawable/ic_star" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-        app:layout_constraintEnd_toStartOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageView13"
-        app:srcCompat="@drawable/ic_star" />
-
-    <ImageView
         android:id="@+id/iv_foto_ikan"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -52,6 +22,7 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/nunito_sans"
         android:text="@string/nama"
+        android:textColor="@color/biru"
         android:textSize="13sp"
         app:layout_constraintStart_toEndOf="@+id/iv_foto_ikan"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,11 +32,35 @@
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/nunito_sans_light"
-        android:text="komentar"
+        android:text="Estimasi kedatangan produk 30 November 2021"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/iv_foto_ikan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga" />
+
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nunito_sans_light"
+        android:text="Harga"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/iv_foto_ikan"
         app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="1"
+        android:textColor="@color/biru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.rendra.imakan.detail
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
@@ -10,6 +11,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.R
+import com.rendra.imakan.cart.orderConfirmation.OrderConfirmationActivity
 import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.Ulasan
 import com.rendra.imakan.model.ikanDetail
@@ -47,10 +49,14 @@ class DetailActivity : AppCompatActivity() {
             .into(iv_poster)
 
         rv_tentang_toko.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rv_ulasan.layoutManager = LinearLayoutManager(this.applicationContext)
+        rv_ulasan.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         getData()
         getData2()
+
+        btn_beli.setOnClickListener {
+            startActivity(Intent(this, OrderConfirmationActivity::class.java).putExtra("data", data))
+        }
     }
 
 
