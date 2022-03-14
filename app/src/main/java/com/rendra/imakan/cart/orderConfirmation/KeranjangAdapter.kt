@@ -1,12 +1,9 @@
 package com.rendra.imakan.cart.orderConfirmation
 
 import android.content.Context
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -39,7 +36,7 @@ class KeranjangAdapter(private var data: List<ikanDetail>,
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvNama:TextView = view.findViewById(R.id.tv_nama)
-        private val tvHarga:TextView = view.findViewById(R.id.tv_harga)
+        private val tvHarga:TextView = view.findViewById(R.id.tv_total)
 
         private val ivPhoto:ImageView = view.findViewById(R.id.iv_photo_toko)
 

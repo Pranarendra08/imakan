@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
-import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 
 
@@ -38,7 +37,7 @@ class HomeSellerAdapter(private var data: List<ikanDetail>,
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvIkan:TextView = view.findViewById(R.id.tv_ikan)
-        private val tvHarga:TextView = view.findViewById(R.id.tv_harga)
+        private val tvHarga:TextView = view.findViewById(R.id.tv_total)
         private val tvTersedia:TextView = view.findViewById(R.id.tv_tersedia)
         private val tvJarak:TextView = view.findViewById(R.id.tv_jarak)
         private val tvToko:TextView = view.findViewById(R.id.tv_toko)

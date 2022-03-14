@@ -35,8 +35,8 @@ class ProfileWishlistAdapter(private var data: List<ikanHome>,
     override fun getItemCount(): Int = data.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val tvNama:TextView = view.findViewById(R.id.tv_nama_ikan)
-        private val tvJarak:TextView = view.findViewById(R.id.tv_harga)
+        private val tvNama:TextView = view.findViewById(R.id.tv_total_desc)
+        private val tvJarak:TextView = view.findViewById(R.id.tv_total)
 
         private val ivImage:ImageView = view.findViewById(R.id.iv_foto_ikan)
 

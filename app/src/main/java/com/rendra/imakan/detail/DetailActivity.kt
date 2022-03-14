@@ -3,9 +3,7 @@ package com.rendra.imakan.detail
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -16,9 +14,7 @@ import com.rendra.imakan.model.Order
 import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.Ulasan
 import com.rendra.imakan.model.ikanDetail
-import com.rendra.imakan.utils.Preferences
 import kotlinx.android.synthetic.main.activity_detail.*
-import java.util.*
 import kotlin.collections.ArrayList
 
 class DetailActivity : AppCompatActivity() {
@@ -43,8 +39,8 @@ class DetailActivity : AppCompatActivity() {
             .child(data?.nama.toString())
             .child("ulasan")
 
-        tv_nama_ikan.text = data!!.nama
-        tv_harga.text = data.harga
+        tv_total_desc.text = data!!.nama
+        tv_total.text = data.harga
 
         Glide.with(this)
             .load(data.url)

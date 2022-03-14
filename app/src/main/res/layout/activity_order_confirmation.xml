@@ -177,7 +177,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_total_pembayaran"
             android:layout_width="0dp"
-            android:layout_height="190dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -204,7 +204,7 @@
             android:id="@+id/textView73"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/nunito_semibold"
             android:text="@string/lanjut_berbelanja"
@@ -213,6 +213,32 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_lanjut_bayar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_total_pembayaran" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Total yang harus dibayarkan"
+            android:textColor="@color/abu_abu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_total_pembayaran" />
+
+        <TextView
+            android:id="@+id/tv_total_harus_dibayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="TextView"
+            android:textColor="@color/warna_total_harga"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_total_pembayaran" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

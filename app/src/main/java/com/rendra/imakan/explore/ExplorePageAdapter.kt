@@ -11,7 +11,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
 import com.rendra.imakan.model.ikanDetail
-import com.rendra.imakan.model.ikanHome
 
 class ExplorePageAdapter(private var data: List<ikanDetail>,
                          private val listener:(ikanDetail) -> Unit)
@@ -36,12 +35,12 @@ class ExplorePageAdapter(private var data: List<ikanDetail>,
     override fun getItemCount(): Int = data.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val tvIkan1:TextView = view.findViewById(R.id.tv_nama_ikan)
+        private val tvIkan1:TextView = view.findViewById(R.id.tv_total_desc)
         private val tvIkan2:TextView = view.findViewById(R.id.tv_nama_ikan2)
         private val tvIkan3:TextView = view.findViewById(R.id.tv_nama_ikan3)
         private val tvIkan4:TextView = view.findViewById(R.id.tv_nama_ikan4)
 
-        private val tvHarga1:TextView = view.findViewById(R.id.tv_harga)
+        private val tvHarga1:TextView = view.findViewById(R.id.tv_total)
         private val tvHarga2:TextView = view.findViewById(R.id.tv_harga2)
         private val tvHarga3:TextView = view.findViewById(R.id.tv_harga3)
         private val tvHarga4:TextView = view.findViewById(R.id.tv_harga4)

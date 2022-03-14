@@ -14,7 +14,9 @@ import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.utils.Preferences
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.activity_detail.tv_total
 import kotlinx.android.synthetic.main.activity_order_confirmation.*
+import kotlinx.android.synthetic.main.row_item_checkout.*
 
 class OrderConfirmationActivity : AppCompatActivity() {
 
@@ -39,6 +41,7 @@ class OrderConfirmationActivity : AppCompatActivity() {
         tv_phone_number.text = preferences.getValue("phoneNumber")
         tv_alamat.text = preferences.getValue("alamat")
 
+
         for (a in dataList.indices) {
             total += dataList[a].harga!!.toInt()
         }
@@ -46,17 +49,18 @@ class OrderConfirmationActivity : AppCompatActivity() {
         dataList.add(Order("Biaya Ongkos Kirim: JNE", "Rp. 28,000"))
         total += 28000
         dataList.add(Order("Potongan dari voucher", "Rp. 0"))
-        dataList.add(Order("Total yang harus dibayarkan", total.toString()))
+        tv_total_harus_dibayar.text = total.toString()
 
         rv_total_pembayaran.layoutManager = LinearLayoutManager(this)
         rv_total_pembayaran.adapter = CheckoutAdapter(dataList) {
 
         }
 
+
         rv_keranjang.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         btn_lanjut_bayar.setOnClickListener {
-            startActivity(Intent(this, PaymentPageActivity::class.java).putExtra("data", dataList))
+            startActivity(Intent(this, PaymentPageActivity::class.java).putExtra("data", dataList).putExtra("total", total))
         }
     }
 
