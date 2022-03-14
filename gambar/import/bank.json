@@ -1,0 +1,17 @@
+{
+  "bca" : {
+    "nama" : "BCA Virtual Account"
+  },
+  "bni" : {
+    "nama" : "BNI Virtual Account"
+  },
+  "bri" : {
+    "nama" : "BRI Virtual Account"
+  },
+  "jago" : {
+    "nama" : "Bank Jago Virtual Account"
+  },
+  "mandiri" : {
+    "nama" : "Mandiri Virtual Account"
+  }
+}
