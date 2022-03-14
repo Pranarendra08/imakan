@@ -69,7 +69,7 @@ class HomeFragment : Fragment() {
         getData4()
 
     }
-
+    //home
     private fun getData() {
         mDatabase.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -90,7 +90,7 @@ class HomeFragment : Fragment() {
 
         })
     }
-
+    //Bestseller
     private fun getData2() {
         mDatabase2.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -109,7 +109,7 @@ class HomeFragment : Fragment() {
             }
         })
     }
-
+    //Rekomendasi
     private fun getData3() {
         mDatabase3.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -128,7 +128,7 @@ class HomeFragment : Fragment() {
             }
         })
     }
-
+    //beliLagi
     private fun getData4() {
         mDatabase4.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

@@ -13,11 +13,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rendra.imakan.R
-import com.rendra.imakan.home.HomePictAdapter
-import com.rendra.imakan.model.TentangToko
+import com.rendra.imakan.model.ikanDetail
 
-class KeranjangAdapter(private var data: List<TentangToko>,
-                       private val listener:(TentangToko) -> Unit)
+class KeranjangAdapter(private var data: List<ikanDetail>,
+                       private val listener:(ikanDetail) -> Unit)
     : RecyclerView.Adapter<KeranjangAdapter.ViewHolder>() {
 
     lateinit var contextAdapter: Context
@@ -28,7 +27,7 @@ class KeranjangAdapter(private var data: List<TentangToko>,
     ): KeranjangAdapter.ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         contextAdapter = parent.context
-        val inflatedView = layoutInflater.inflate(R.layout.item_tentang_toko, parent, false)
+        val inflatedView = layoutInflater.inflate(R.layout.row_item_keranjang, parent, false)
         return ViewHolder(inflatedView)
     }
 
@@ -39,19 +38,17 @@ class KeranjangAdapter(private var data: List<TentangToko>,
     override fun getItemCount(): Int = data.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val tvNamaToko:TextView = view.findViewById(R.id.tv_nama_toko)
-        private val tvTransaksi:TextView = view.findViewById(R.id.tv_transaksi)
-        private val tvAktivitas:TextView = view.findViewById(R.id.tv_aktifitas)
+        private val tvNama:TextView = view.findViewById(R.id.tv_nama)
+        private val tvHarga:TextView = view.findViewById(R.id.tv_harga)
 
         private val ivPhoto:ImageView = view.findViewById(R.id.iv_photo_toko)
 
-        fun bindItem(data: TentangToko, listener: (TentangToko) -> Unit, context: Context) {
-            tvNamaToko.text = data.namaToko
-            tvTransaksi.text = data.transaksi
-            tvAktivitas.text = data.aktif
+        fun bindItem(data: ikanDetail, listener: (ikanDetail) -> Unit, context: Context) {
+            tvNama.text = data.nama
+            tvHarga.text = data.harga
 
             Glide.with(context)
-                .load(data.urlToko)
+                .load(data.url)
                 .apply(RequestOptions.centerCropTransform())
                 .into(ivPhoto)
 

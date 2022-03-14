@@ -69,6 +69,7 @@ class SignInActivity : AppCompatActivity() {
                         preference.setValue("password", user.password.toString())
                         preference.setValue("phoneNumber", user.phoneNumber.toString())
                         preference.setValue("url", user.url.toString())
+                        preference.setValue("alamat", user.alamat.toString())
                         preference.setValue("status", "1")
 
                         startActivity(Intent(this@SignInActivity, HomePageActivity::class.java))

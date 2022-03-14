@@ -12,6 +12,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
 import com.rendra.imakan.R
 import com.rendra.imakan.cart.orderConfirmation.OrderConfirmationActivity
+import com.rendra.imakan.model.Order
 import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.Ulasan
 import com.rendra.imakan.model.ikanDetail
@@ -26,6 +27,8 @@ class DetailActivity : AppCompatActivity() {
     private lateinit var mDatabase2: DatabaseReference
     private var dataList = ArrayList<TentangToko>()
     private var dataList2 = ArrayList<Ulasan>()
+    private var dataList3 = ArrayList<Order>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,8 +57,11 @@ class DetailActivity : AppCompatActivity() {
         getData()
         getData2()
 
+        val ikan = Order(data.nama, data.harga)
+        dataList3.add(ikan)
+
         btn_beli.setOnClickListener {
-            startActivity(Intent(this, OrderConfirmationActivity::class.java).putExtra("data", data))
+            startActivity(Intent(this, OrderConfirmationActivity::class.java).putExtra("data", dataList3).putExtra("datas", data))
         }
     }
 
