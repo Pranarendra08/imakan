@@ -40,7 +40,7 @@ class ExplorePageAdapter(private var data: List<ikanDetail>,
         private val tvIkan3:TextView = view.findViewById(R.id.tv_nama_ikan3)
         private val tvIkan4:TextView = view.findViewById(R.id.tv_nama_ikan4)
 
-        private val tvHarga1:TextView = view.findViewById(R.id.tv_total)
+        private val tvHarga1:TextView = view.findViewById(R.id.tv_nama)
         private val tvHarga2:TextView = view.findViewById(R.id.tv_harga2)
         private val tvHarga3:TextView = view.findViewById(R.id.tv_harga3)
         private val tvHarga4:TextView = view.findViewById(R.id.tv_harga4)

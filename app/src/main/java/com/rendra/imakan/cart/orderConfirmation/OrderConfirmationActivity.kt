@@ -3,20 +3,15 @@ package com.rendra.imakan.cart.orderConfirmation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.*
 import com.rendra.imakan.R
 import com.rendra.imakan.cart.payment.PaymentPageActivity
-import com.rendra.imakan.detail.TentangTokoAdapter
 import com.rendra.imakan.model.Order
-import com.rendra.imakan.model.TentangToko
 import com.rendra.imakan.model.ikanDetail
 import com.rendra.imakan.utils.Preferences
-import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.activity_detail.tv_total
+import kotlinx.android.synthetic.main.activity_detail.tv_nama
 import kotlinx.android.synthetic.main.activity_order_confirmation.*
-import kotlinx.android.synthetic.main.row_item_checkout.*
 
 class OrderConfirmationActivity : AppCompatActivity() {
 

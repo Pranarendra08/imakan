@@ -8,6 +8,8 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/logo_imakan.xml" value="0.3574074074074074" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/rectangle_hijau.xml" value="0.3574074074074074" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_eclipse_border_blue.xml" value="0.1885" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_eclipse_green.xml" value="0.1885" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_eclipse_white.xml" value="0.1" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_line_abu.xml" value="0.3265822784810127" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/drawable/shape_line_hijau.xml" value="0.3265822784810127" />
@@ -49,6 +51,7 @@
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_find_explore.xml" value="0.75" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_home_pict.xml" value="0.28274428274428276" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_keranjang.xml" value="0.33" />
+        <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_pembayaran.xml" value="0.33" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_profile_wishlist.xml" value="0.67" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_total.xml" value="0.5" />
         <entry key="..\:/zzzRENDRA/Project/IMAKAN/app/src/main/res/layout/row_item_ulasan_pembeli.xml" value="0.33" />

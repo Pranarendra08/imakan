@@ -36,7 +36,7 @@ class KeranjangAdapter(private var data: List<ikanDetail>,
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvNama:TextView = view.findViewById(R.id.tv_nama)
-        private val tvHarga:TextView = view.findViewById(R.id.tv_total)
+        private val tvHarga:TextView = view.findViewById(R.id.tv_nama)
 
         private val ivPhoto:ImageView = view.findViewById(R.id.iv_photo_toko)
 

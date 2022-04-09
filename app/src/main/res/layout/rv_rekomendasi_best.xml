@@ -59,7 +59,7 @@
         tools:text="Ikan Nila" />
 
     <TextView
-        android:id="@+id/tv_total"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -78,8 +78,8 @@
         android:fontFamily="@font/nunito_semibold"
         android:textColor="@color/biru"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_total"
-        app:layout_constraintStart_toEndOf="@+id/tv_total"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nama"
+        app:layout_constraintStart_toEndOf="@+id/tv_nama"
         tools:text="(tersedia 23 kg)" />
 
     <TextView
@@ -90,7 +90,7 @@
         android:layout_marginTop="4dp"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/iv_best_seller"
-        app:layout_constraintTop_toBottomOf="@+id/tv_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
         tools:text="11 Km dari tempat kamu" />
 
     <ImageView

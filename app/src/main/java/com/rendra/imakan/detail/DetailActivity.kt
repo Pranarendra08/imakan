@@ -40,7 +40,7 @@ class DetailActivity : AppCompatActivity() {
             .child("ulasan")
 
         tv_total_desc.text = data!!.nama
-        tv_total.text = data.harga
+        tv_nama.text = data.harga
 
         Glide.with(this)
             .load(data.url)

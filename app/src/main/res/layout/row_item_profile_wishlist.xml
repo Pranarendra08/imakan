@@ -25,11 +25,11 @@
         android:text="Nama Ikan"
         android:textColor="@color/white"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_total"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nama"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_total"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,8 +58,8 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/ic_profile_love"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_total"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nama"
         app:layout_constraintEnd_toEndOf="@+id/iv_foto_ikan"
-        app:layout_constraintTop_toTopOf="@+id/tv_total" />
+        app:layout_constraintTop_toTopOf="@+id/tv_nama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

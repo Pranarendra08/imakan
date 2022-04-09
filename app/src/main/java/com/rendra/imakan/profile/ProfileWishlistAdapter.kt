@@ -36,7 +36,7 @@ class ProfileWishlistAdapter(private var data: List<ikanHome>,
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvNama:TextView = view.findViewById(R.id.tv_total_desc)
-        private val tvJarak:TextView = view.findViewById(R.id.tv_total)
+        private val tvJarak:TextView = view.findViewById(R.id.tv_nama)
 
         private val ivImage:ImageView = view.findViewById(R.id.iv_foto_ikan)
 

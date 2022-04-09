@@ -37,7 +37,7 @@ class HomeSellerAdapter(private var data: List<ikanDetail>,
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvIkan:TextView = view.findViewById(R.id.tv_ikan)
-        private val tvHarga:TextView = view.findViewById(R.id.tv_total)
+        private val tvHarga:TextView = view.findViewById(R.id.tv_nama)
         private val tvTersedia:TextView = view.findViewById(R.id.tv_tersedia)
         private val tvJarak:TextView = view.findViewById(R.id.tv_jarak)
         private val tvToko:TextView = view.findViewById(R.id.tv_toko)
